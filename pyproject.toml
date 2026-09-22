@@ -1,0 +1,13 @@
+[project]
+name = "backend"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "pydantic>=2.13.5",
+    "requests>=2.34.2",
+    "uvicorn[standard]>=0.53.0",
+    "playwright",
+    "python-dotenv",
+    "pydantic-settings>=2.15.0",
+]
