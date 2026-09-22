@@ -28,7 +28,7 @@ import csv
 import io
 from typing import List
 
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException, BackgroundTasks, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
@@ -169,3 +169,7 @@ def export_csv():
 @app.get("/health")
 def health():
     return {"status": "ok", "leads_loaded": len(db.get_all_leads())}
+
+@app.head("/health")
+def health_head():
+    return Response(status_code=200)
