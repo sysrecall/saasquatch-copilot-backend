@@ -31,9 +31,9 @@ from playwright.async_api import async_playwright, TimeoutError as PlaywrightTim
 CANDIDATE_PATHS = ["", "/contact", "/contact-us", "/about", "/about-us"]
 NAV_TIMEOUT_MS = 15_000
 POST_LOAD_DELAY_MS = 2_500  # extra settle time for CSR sites past networkidle
-MAX_CHARS_PER_PAGE = 4_000  # keep the eventual LLM prompt small and cheap
+MAX_CHARS_PER_PAGE = 10**18  # keep the eventual LLM prompt small and cheap
 BROWSER_LAUNCH_TIMEOUT_S = 20  # a missing/broken browser install must fail fast, not hang
-OVERALL_TIMEOUT_S = 90  # hard ceiling on the whole multi-page fetch
+OVERALL_TIMEOUT_S = 60 * 5  # hard ceiling on the whole multi-page fetch
 
 
 class ScraperError(Exception):

@@ -118,7 +118,7 @@ def extract_contact_info(pages, on_retry=None) -> dict:
     if not context.strip():
         raise GeminiError("no renderable page content was retrieved to extract from")
     prompt = (
-        "Below is real text rendered from a real small business's website "
+        "Below is real text rendered from a real business's website "
         "(homepage and/or contact/about pages), including any mailto: or "
         "tel: links found in the HTML. Extract ONLY information explicitly "
         "present in this text - do not guess, infer, or generate a "
