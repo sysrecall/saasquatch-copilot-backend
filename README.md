@@ -78,4 +78,3 @@ Deployed on Render. If deploying this yourself as its own repo:
 - LinkedIn as a data source (violates its Terms of Service; also actively blocks automation)
 - Deduplication — deliberately removed. It's an ingestion-layer concern (merging overlapping results from multiple scraped sources), and this project doesn't build that ingestion layer; a single-source seed list has no duplicates to find.
 - Auth / multi-tenancy
-- Bypassing anti-bot/CAPTCHA protection on scraped sites (some sites, like PyPI, serve a CAPTCHA to headless browsers — expected and not worked around)
