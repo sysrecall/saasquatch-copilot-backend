@@ -31,7 +31,7 @@ All in `.env.example` — copy it to `.env` and fill in:
 | Variable | Default | Notes |
 |---|---|---|
 | `GEMINI_API_KEY` | *(none)* | Get a free key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey). Without it, outreach/enrichment fail with a clear error instead of faking output. |
-| `GEMINI_MODEL` | `gemini-2.5-flash` | |
+| `GEMINI_MODEL` | `gemini-3.5-flash` | |
 | `GEMINI_RPM_LIMIT` | `8` | Requests-per-minute the client throttles itself to. Google doesn't publish a fixed free-tier number anymore (their docs say capacity "is not guaranteed and may vary") — check your actual limit at [aistudio.google.com/rate-limit](https://aistudio.google.com/rate-limit) and adjust. |
 | `GEMINI_TIMEOUT_S` | `45` | Per-request timeout. Raise this before raising retries if you're seeing timeouts. |
 | `GEMINI_MAX_RETRIES` | `3` | Governs the synchronous outreach endpoint. Enrichment (a background job) always uses 6, since nothing is blocked waiting on it. |
