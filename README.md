@@ -1,6 +1,6 @@
 # SaaSquatch Copilot — Backend
 
-FastAPI backend for a lead-qualification and outreach pipeline built on top of SaaSquatch's data model, for Caprae Capital's Full Stack Developer AI-Readiness Pre-Screening Challenge. Pairs with a separate frontend: **[FRONTEND_REPO_LINK]**.
+FastAPI backend for a lead-qualification and outreach pipeline built on top of SaaSquatch's data model, for Caprae Capital's Full Stack Developer AI-Readiness Pre-Screening Challenge. Pairs with a separate frontend: **[[FRONTEND_REPO_LINK]](https://github.com/sysrecall/saasquatch-copilot-front)**.
 
 ## What it does
 
